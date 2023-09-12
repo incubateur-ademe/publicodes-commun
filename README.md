@@ -1,65 +1,46 @@
-# Publicodes Package Template
+<div align="center">
+  <h3 align="center">
+	<big>Publicodes règles communes</big>
+  </h3>
+  <p align="center">
+   <a href="https://github.com/incubateur-ademe/publicodes-commun/issues">Report Bug</a>
+   •
+   <a href="https://incubateur-ademe.github.io/publicodes-commun/">API docs</a>
+   •
+   <a href="https://github.com/incubateur-ademe/publicodes-commun/blob/master/CONTRIBUTING.md">Contribute</a>
+  </p>
 
-Template pour créer un paquet [publicodes](https://publi.codes).
+Règles [publicodes](https://publi.codes) communes aux modèles publicodes de
+l'[incubateur de l'ADEME](https://beta.gouv.fr/startups/?incubateur=ademe).
 
-Les fonctionnalités suivantes sont disponibles :
-- 📦 compilation des règles publicodes en un seul fichier JSON grâce à
-[`@incubateur-ademe/publicodes-tools`](https://github.com/incubateur-ademe/publicodes-tools)
-- 📖 documentation du modèle interactive disponible sur GitHub Pages grâce à
-[`@publicodes/react-ui`](https://publi.codes/docs/api/react-ui)
-- 🚀 API REST pour utiliser le modèle dans une application grâce à
-[`@publicodes/api`](https://publi.codes/docs/api/api-rest)
-
-## Initialisation
-
-Pour utiliser ce template, il suffit de cliquer sur le bouton `Use this
-template`. Puis de remplacer les variables suivantes dans tous les fichiers du
-projet :
-
-- `%PACKAGE_NAME%` : nom du paquet npm / nom du repository GitHub
-- `%GITHUB_USER%` : nom d'utilisateur GitHub / organisation GitHub
-
-Pour utiliser les fonctionnalités de la CI, il faut ajouter les variables
-suivantes dans les secrets du repository GitHub :
-
-- `NPM_TOKEN` : token NPM pour publier le paquet sur [npmjs.com](https://npmjs.com)
-- `PAT` : Personal Access Token pour publier la documentation sur GitHub Pages
-
-Pour deployer la documentation sur GitHub Pages, il faut sélectionner la
-branche `gh-pages` dans les paramètres du repository.
-
-## Example de dépôts utilisant ce template
-
-- [`@incubateur-ademe/modele-numerique`](https://github.com/incubateur-ademe/modele-numerique) -
-_Modèle Publicodes pour calculer l'impact (en CO2eq) du numérique_
+</div>
 
 ## Usage 
 
-Ajouter le paquet à vos dépendandes : 
+Ajouter le paquet à vos dépendances : 
 ```
-yarn add %PACKAGE_NAME
+bun add @incubateur-ademe/publicodes-commun
 ```
 
-Instancier une nouveau moteur Publicode :
+Instancier un nouveau moteur Publicode :
 ```typescript
 import Engine from 'publicodes'
-import rules from '%PACKAGE_NAME%'
+import rules from '@incubateur-ademe/publicodes-commun'
 
 const engine = new Engine(rules)
 
-engine.evaluate('tablette . consommation en mode actif')
+engine.evaluate('intensité électricité')
 ```
 
 Utiliser certaines règles dans un autre modèle publicodes :
 ```yaml
 importer!:
   depuis:
-    nom: %PACKAGE_NAME% 
-    url: https://github.com/incubateur-ademe/modele-numerique
-  dans: modèle numérique
+    nom: @incubateur-ademe/publicodes-commun 
+    url: https://github.com/incubateur-ademe/publicodes-commun
+  dans: règles communes
   les règles:
-    - numérique . internet . consommation horaire 
-    - ordinateur portable . construction
+    - intensité électricité
 ```
 
 ### En local
@@ -67,42 +48,42 @@ importer!:
 #### Compiler le modèle
 
 > Les règles publicodes du modèle sont disponible dans le workspace
-> [`rules/`](https://github.com/%GITHUB_USER%/%PACKAGE_NAME%/tree/main/rules).
+> [`rules/`](https://github.com/incubateur-ademe/publicodes-commun/tree/main/rules).
 
-Pour installer les dépendences et compiler tous les fichiers `.publicodes` en
+Pour installer les dépendances et compiler tous les fichiers `.publicodes` en
 un seul fichier JSON, il suffit d'exécuter la commande suivante : 
 
 ```
-yarn && yarn run build
+bun && bun run build
 ```
 
 #### Lancer la documentation
 
 > Le code de la documentation est disponible dans le workspace
-> [`doc/`](https://github.com/%GITHUB_USER%/%PACKAGE_NAME%/tree/main/doc).
+> [`doc/`](https://github.com/incubateur-ademe/publicodes-commun/tree/main/doc).
 
 Pour lancer l'app React en local permettant de parcourir la documentation du
 modèle, il suffit d'exécuter la commande suivante :
 
 ```
-yarn install --cwd doc
+bun i --cwd doc
 
-yarn run doc
+bun run doc
 ```
 
 #### Lancer l'API
 
 > Le code de l'API est disponible dans le workspace
-> [`api/`](https://github.com/%GITHUB_USER%/%PACKAGE_NAME%/tree/main/api).
+> [`api/`](https://github.com/incubateur-ademe/publicodes-commun/tree/main/api).
 
 Pour lancer le serveur Node permettant d'utiliser l'API REST, il faut utiliser les commandes
 suivantes : 
 
 ```
-yarn run api
+bun run api
 
 # En watch-mode
-yarn run api:watch
+bun run api:watch
 ```
 
 ## Publier une nouvelle version

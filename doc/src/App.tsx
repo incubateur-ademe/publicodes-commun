@@ -4,11 +4,14 @@ import { RulePage } from "publicodes-react";
 import { Link, Route, Routes, useParams } from "react-router-dom";
 import { ComponentProps, useRef } from "react";
 
-import model from "./%PACKAGE_NAME%.model.json";
+import model from "./publicodes-commun.model.json";
 
 const engine = new Engine(model as {});
 
-const baseUrl = process.env.NODE_ENV === "development" ? "" : "/%PACKAGE_NAME%";
+const baseUrl =
+  process.env.NODE_ENV === "development" ? "" : "/publicodes-commun";
+
+const defaultRule = "intensité électricité";
 
 function Documentation() {
   const url = useParams()["*"];
@@ -20,11 +23,11 @@ function Documentation() {
     <div>
       <RulePage
         documentationPath={`${baseUrl}/doc`}
-        rulePath={url ?? ""}
+        rulePath={url ?? defaultRule}
         engine={engine}
         renderers={renderers}
         language={"fr"}
-        npmPackage="%PACKAGE_NAME%"
+        npmPackage="@incubateur-ademe/publicodes-commun"
       />
     </div>
   );
@@ -36,7 +39,9 @@ function Landing() {
       <h1>Documentation</h1>
       <ul>
         <li>
-          <Link to={`${baseUrl}/doc/numérique`}>Modèle numérique</Link>
+          <Link to={`${baseUrl}/doc/${defaultRule}`}>
+            Accéder à la documentation
+          </Link>
         </li>
       </ul>
     </div>
@@ -44,8 +49,6 @@ function Landing() {
 }
 
 export default function App() {
-  console.log("baseURl:", baseUrl);
-  console.log("rules:", Object.keys(model));
   return (
     <div className="App">
       <Routes>

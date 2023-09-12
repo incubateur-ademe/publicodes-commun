@@ -1,10 +1,10 @@
 {
-  "name": "%PACKAGE_NAME%-doc",
+  "name": "publicodes-commun-doc",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://%GITHUB_USER%.github.io/%PACKAGE_NAME%",
+  "homepage": "https://incubateur-ademe.github.io/publicodes-commun",
   "scripts": {
-    "start": "react-scripts start",
+    "start": "PUBLIC_URL=http://localhost:3000 react-scripts start",
     "build": "react-scripts build",
     "eject": "react-scripts eject"
   },
@@ -27,18 +27,5 @@
     "extends": [
       "react-app"
     ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "packageManager": "yarn@3.6.3"
+  }
 }

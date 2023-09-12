@@ -4,7 +4,7 @@ import { disabledLogger } from "@incubateur-ademe/publicodes-tools";
 import Engine from "publicodes";
 
 const srcFiles = "rules/**/*.publicodes";
-const destPath = "%PACKAGE_NAME%.model.json";
+const destPath = "publicodes-commun.model.json";
 
 const model = getModelFromSource(srcFiles, { verbose: true });
 
@@ -24,7 +24,7 @@ writeFileSync(
 import rules from "./${destPath}";
 
 export default rules;
-`,
+`
 );
 console.log(`✅ index.js generated`);
 
@@ -34,7 +34,7 @@ let indexDTypes = Object.keys(model).reduce(
 import { Rule } from "publicodes";
 
 export type DottedName = 
-`,
+`
 );
 
 indexDTypes += `
