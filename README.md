@@ -10,8 +10,9 @@
    <a href="https://github.com/incubateur-ademe/publicodes-commun/blob/master/CONTRIBUTING.md">Contribute</a>
   </p>
 
-Règles [publicodes](https://publi.codes) communes aux modèles publicodes de
-l'[incubateur de l'ADEME](https://beta.gouv.fr/startups/?incubateur=ademe).
+Ensemble de règles communes utilisées pour l'implémentation des modèles
+[publicodes](https://publi.codes) de l'[incubateur de
+l'ADEME](https://beta.gouv.fr/startups/?incubateur=ademe).
 
 </div>
 
