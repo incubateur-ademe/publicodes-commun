@@ -10,9 +10,14 @@
    <a href="https://github.com/incubateur-ademe/publicodes-commun/blob/master/CONTRIBUTING.md">Contribute</a>
   </p>
 
+![CI][ci-link] ![NPM][npm-link]
+
 Ensemble de règles communes utilisées pour l'implémentation des modèles
 [publicodes](https://publi.codes) de l'[incubateur de
 l'ADEME](https://beta.gouv.fr/startups/?incubateur=ademe).
+
+Sa documentation est disponible [en
+ligne](https://incubateur-ademe.github.io/publicodes-commun/).
 
 </div>
 
@@ -91,3 +96,6 @@ bun run api:watch
 
 Afin de publier une nouvelle version il suffit d'exécuter la commande `npm
 version`.
+
+[ci-link]: https://img.shields.io/github/actions/workflow/status/incubateur-ademe/publicodes-commun/packaging.yaml?logo=github&logoColor=white&label=build%20%26%20test
+[npm-link]: https://img.shields.io/npm/v/%40incubateur-ademe%2Fpublicodes-commun?logo=npm&logoColor=white&color=salmon
