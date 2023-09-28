@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/publicodes-commun/static/css/main.e7811a61.css",
+    "main.js": "/publicodes-commun/static/js/main.bb92d919.js",
+    "index.html": "/publicodes-commun/index.html",
+    "main.e7811a61.css.map": "/publicodes-commun/static/css/main.e7811a61.css.map",
+    "main.bb92d919.js.map": "/publicodes-commun/static/js/main.bb92d919.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e7811a61.css",
+    "static/js/main.bb92d919.js"
+  ]
+}
