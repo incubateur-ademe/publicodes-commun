@@ -15,7 +15,7 @@ mois par an:
 
 semaines par an:
   titre: Nombre de semaines par an
-  formule: jours par an / jours par semaine
+  formule: 52
   unité: semaine
 
 jours par semaine:
