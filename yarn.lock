@@ -2,25 +2,27 @@
 # yarn lockfile v1
 
 
-"@incubateur-ademe/publicodes-tools@^0.2.1":
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/@incubateur-ademe/publicodes-tools/-/publicodes-tools-0.2.1.tgz#94585b3f07c6c054e6ffd7ef44081a4624b8a851"
-  integrity sha512-DFma9Jkwug7LQIGK1r8vjsmGZAc4m2EO8zbGF4DgCvFLe6fPz9ZpYAnLE9pisyS87AigxDgfRVm5UerFU9Be6g==
+"@publicodes/tools@^0.4.7":
+  version "0.4.7"
+  resolved "https://registry.yarnpkg.com/@publicodes/tools/-/tools-0.4.7.tgz#a9dd113d3569b180b02aae656823ff260c99aaf3"
+  integrity sha512-ujg4Dppcraxc0J955EEnHVk5PWhIOp9VBKMEYggdQtI1U83OQK59nofZkvjgfSK+GwELqZ1+VoQkKIeBbmeUqA==
   dependencies:
     "@types/node" "^18.11.18"
-    publicodes "^1.0.0-beta.71"
+    publicodes "1.0.0-beta.77"
 
 "@types/node@^18.11.18":
-  version "18.17.14"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.17.14.tgz#a621ad26e7eb076d6846dd3d39557ddf9d89f04b"
-  integrity sha512-ZE/5aB73CyGqgQULkLG87N9GnyGe5TcQjv34pwS8tfBs1IkCh0ASM69mydb2znqd6v0eX+9Ytvk6oQRqu8T1Vw==
+  version "18.19.14"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.19.14.tgz#1880ff1b3ac913f3877f711588e5ed227da01886"
+  integrity sha512-EnQ4Us2rmOS64nHDWr0XqAD8DsO6f3XR6lf9UIIrZQpUzPVdN/oPuEzfDWNHSyXLvoGgjuEm/sPwFGSSs35Wtg==
+  dependencies:
+    undici-types "~5.26.4"
 
 publicodes@1.0.0-beta.77:
   version "1.0.0-beta.77"
   resolved "https://registry.yarnpkg.com/publicodes/-/publicodes-1.0.0-beta.77.tgz#45e3c4d2a46bfadcc932e1405ea037e659c28134"
   integrity sha512-F8U3WGUWMo3/rxhWYS1gWIiG20g1Yy/+PpXdHM99d6ZHKWnnyh/4txVEuyVE75glgDs+mTjwZPnmoKWsTMXluA==
 
-publicodes@^1.0.0-beta.71:
-  version "1.0.0-beta.71"
-  resolved "https://registry.yarnpkg.com/publicodes/-/publicodes-1.0.0-beta.71.tgz#662478db6460bf1348183c2e012c7b35b19a55c9"
-  integrity sha512-m4JIdP3J1wncTmIAPFytZn2sv9y1vGL0BSJJdmsga8Un5q1GmRRZEo/BQGt8WKw2Mm8O14LuobdEV+g15h9Dcg==
+undici-types@~5.26.4:
+  version "5.26.5"
+  resolved "https://registry.yarnpkg.com/undici-types/-/undici-types-5.26.5.tgz#bcd539893d00b56e964fd2657a4866b221a65617"
+  integrity sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==
