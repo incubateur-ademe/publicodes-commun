@@ -14,8 +14,8 @@
   "scripts": {
     "clean": "rm -r publicodes-commun.model.json index.d.ts index.js",
     "build": "node build.js",
-    "doc": "yarn run build && cp publicodes-commun.model.json doc/src && cd doc && bun run start --watch --hot",
-    "doc:build": "yarn run build && cp publicodes-commun.model.json doc/src && cd doc && bun run build"
+    "doc": "yarn run build && cp publicodes-commun.model.json doc/src && cd doc && yarn run start --watch --hot",
+    "doc:build": "yarn run build && cp publicodes-commun.model.json doc/src && cd doc && yarn run build"
   },
   "repository": "git@github.com:incubateur-ademe/publicodes-commun.git",
   "homepage": "https://github.com/incubateur-ademe/publicodes-commun#readme",
