@@ -22,6 +22,11 @@ publicodes@^1.0.1:
   resolved "https://registry.yarnpkg.com/publicodes/-/publicodes-1.0.1.tgz#07c1e5d94b3609a2fe09b531490969c9f4960086"
   integrity sha512-vrgnLCKeu3orxmBhyjll8/rxnL3k2EYtIYa7D7GiJVYWmOE08J5S6c/1j15LnC3cQkYqYgOJR5JnX5gxooQGLA==
 
+publicodes@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/publicodes/-/publicodes-1.0.2.tgz#57b1904657988641b2cd9f83754529124315f18c"
+  integrity sha512-UPXZTyg/fKivfT5Om3GBtgpvaaafBmpUCrMHWioejTx3mjXYc/AqvhkJigF2UanipOAGnDxxaXsYtbydJ5kpXA==
+
 undici-types@~5.26.4:
   version "5.26.5"
   resolved "https://registry.yarnpkg.com/undici-types/-/undici-types-5.26.5.tgz#bcd539893d00b56e964fd2657a4866b221a65617"

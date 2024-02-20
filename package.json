@@ -29,10 +29,11 @@
   "devDependencies": {
     "@publicodes/tools": "^1.0.0-rc.0"
   },
-  "dependencies": {
-    "publicodes": "^1.0.1"
-  },
+  "dependencies": {},
   "publishConfig": {
     "access": "public"
+  },
+  "peerDependencies": {
+    "publicodes": "^1.0.2"
   }
 }
