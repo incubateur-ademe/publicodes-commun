@@ -2,30 +2,25 @@
 # yarn lockfile v1
 
 
-"@publicodes/tools@^1.0.0-rc.0":
-  version "1.0.0-rc.0"
-  resolved "https://registry.yarnpkg.com/@publicodes/tools/-/tools-1.0.0-rc.0.tgz#01d36795adc3cf838154a7e97eab1ad65655163e"
-  integrity sha512-LV9uXDgoe8JYbASOthy5VbgDDWF9hLze7gKRC7RRyIvEo3o/FLNCpZIuZR9GBK4C40tw8h7ug36CeU5R5YaMww==
+"@publicodes/tools@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@publicodes/tools/-/tools-1.0.0.tgz#e0b9f9283284c3b06658fd90598d007cb8d69f29"
+  integrity sha512-MeSb/uWGtYF/205m+37b3ZyCNsUMF78Nwd1aljtf0Tacw+R7AVFz8CFrzsikU494WSyfjj9hhbPds1dF7PTu+A==
   dependencies:
     "@types/node" "^18.11.18"
-    publicodes "^1.0.1"
+    publicodes "^1.0.3"
 
 "@types/node@^18.11.18":
-  version "18.19.14"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.19.14.tgz#1880ff1b3ac913f3877f711588e5ed227da01886"
-  integrity sha512-EnQ4Us2rmOS64nHDWr0XqAD8DsO6f3XR6lf9UIIrZQpUzPVdN/oPuEzfDWNHSyXLvoGgjuEm/sPwFGSSs35Wtg==
+  version "18.19.17"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.19.17.tgz#a581a9fb4b2cfdbc61f008804f4436b2d5c40354"
+  integrity sha512-SzyGKgwPzuWp2SHhlpXKzCX0pIOfcI4V2eF37nNBJOhwlegQ83omtVQ1XxZpDE06V/d6AQvfQdPfnw0tRC//Ng==
   dependencies:
     undici-types "~5.26.4"
 
-publicodes@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/publicodes/-/publicodes-1.0.1.tgz#07c1e5d94b3609a2fe09b531490969c9f4960086"
-  integrity sha512-vrgnLCKeu3orxmBhyjll8/rxnL3k2EYtIYa7D7GiJVYWmOE08J5S6c/1j15LnC3cQkYqYgOJR5JnX5gxooQGLA==
-
-publicodes@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/publicodes/-/publicodes-1.0.2.tgz#57b1904657988641b2cd9f83754529124315f18c"
-  integrity sha512-UPXZTyg/fKivfT5Om3GBtgpvaaafBmpUCrMHWioejTx3mjXYc/AqvhkJigF2UanipOAGnDxxaXsYtbydJ5kpXA==
+publicodes@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/publicodes/-/publicodes-1.0.3.tgz#693cd1f6eac998ed848ded27fb4bfd799a4067fb"
+  integrity sha512-vpaOQ+vdxu+2y1rWYQ9/V2UiteN2QwRLovl2UfMZx2ksEB8V0FHxgepwkQ9XHIg6mR1t6QPWaHccIzMxQ00LwA==
 
 undici-types@~5.26.4:
   version "5.26.5"

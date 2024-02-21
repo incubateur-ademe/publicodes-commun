@@ -27,13 +27,13 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "@publicodes/tools": "^1.0.0-rc.0"
+    "@publicodes/tools": "^1.0.0"
   },
   "dependencies": {},
+  "peerDependencies": {
+    "publicodes": "^1.0.3"
+  },
   "publishConfig": {
     "access": "public"
-  },
-  "peerDependencies": {
-    "publicodes": "^1.0.2"
   }
 }
