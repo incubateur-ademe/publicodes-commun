@@ -23,15 +23,16 @@
     "url": "https://github.com/incubateur-ademe/publicodes-commun/issues"
   },
   "authors": [
+    "Clément Auger <clement.auger@beta.gouv.fr>",
     "Emile Rolley <emile.rolley@tuta.io>"
   ],
   "license": "MIT",
   "devDependencies": {
-    "@publicodes/tools": "^1.0.6"
+    "@publicodes/tools": "^1.0.7"
   },
   "dependencies": {},
   "peerDependencies": {
-    "publicodes": "^1.1.0"
+    "publicodes": "^1.1.1"
   },
   "publishConfig": {
     "access": "public"
