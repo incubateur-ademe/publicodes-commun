@@ -68,8 +68,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Install dependencies and build
-        run: yarn install --immutable
-      - run: yarn run doc:build && yarn install --immutable --cwd doc
+        run: yarn install --immutable && yarn install --immutable --cwd doc
+      - run: yarn run doc:build
       - name: Deploy
         uses: crazy-max/ghaction-github-pages@v3
         with:
