@@ -1,12 +1,11 @@
 intensité électricité:
   titre: Intensité carbone du mix électrique français
   description: Intensité moyenne, tous types de consommations confondues, année 2022.
-  formule: 0.0520
+  formule: 0.0580
   unité: kgCO2e/kWh
   note: |
     Ici, on parle du mix électrique de consommation. 
-    Le chiffre est issu de la Base Empreinte (Electricité/2022 - mix moyen/consommation) dont la méthodologie est décrite dans la [documentation](https://prod-basecarbonesolo.ademe-dri.fr/documentation/UPLOAD_DOC_FR/).
-    La v2.6 de MicMac donnait une valeur de 12.4gCO2e/kWh pour les fournisseurs d'électricité "verte", mais cette valeur semble correspondre à un calcul théorique sur l'année, et non pas à un calcul réel, minute par minute.
+    Le chiffre est issu de la Base Empreinte (Electricité/2023 - mix moyen/consommation) dont la méthodologie est décrite dans la [documentation](https://prod-basecarbonesolo.ademe-dri.fr/documentation/UPLOAD_DOC_FR/).
 
 mois par an:
   titre: Nombre de mois par an
