@@ -1,6 +1,2 @@
 node_modules
-.yarn
-%PACKAGE_NAME%.model.json
-index.d.ts
-index.js
-publicodes-commun.model.json
+publicodes-build
