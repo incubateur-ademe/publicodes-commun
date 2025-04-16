@@ -88,7 +88,7 @@ jobs:
       - name: Setup .npmrc file to publish to npm
         uses: actions/setup-node@v3
         with:
-          node-version: "18.x"
+          node-version: 22
           registry-url: "https://registry.npmjs.org"
       - name: Install dependencies and build
         run: yarn install --immutable && yarn compile
