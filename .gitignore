@@ -1,2 +1,5 @@
 node_modules
 publicodes-build
+index.d.ts
+index.js
+publicodes-commun.model.json

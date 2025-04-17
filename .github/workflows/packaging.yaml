@@ -90,8 +90,10 @@ jobs:
         with:
           node-version: 22
           registry-url: "https://registry.npmjs.org"
-      - name: Install dependencies and build
-        run: yarn install --immutable && yarn compile
+      - name: Install dependencies
+        run: yarn install --immutable
+      - name: Prepare packaging
+        run: yarn prepack
       - name: Publish to NPM
         run: npm publish
         env:
