@@ -1,0 +1,39 @@
+mix électrique:
+mix électrique . empreinte carbone:
+  titre: Empreinte carbone du mix électrique français
+  description: |
+    Ce FE est basé sur le lissage des données des années 2024, 2023, 2022 et 2021. L’amont comprend : l’amont des combustibles, l’amortissement de la centrale et les émissions annexes de fonctionnement.
+  formule: 0.0519
+  unité: kgCO2e/kWh
+  note: |
+    Ici, on parle du mix électrique de consommation. 
+    Le chiffre est issu de la Base Empreinte (Electricité/2024 - mix moyen/consommation) dont la méthodologie est décrite dans la [documentation](https://prod-basecarbonesolo.ademe-dri.fr/documentation/UPLOAD_DOC_FR/).
+
+mix électrique . empreinte eau:
+  titre: Empreinte eau du mix électrique français
+  formule: 0.146
+  unité: m3/kWh
+  note: |
+    L'empreinte multi-critère pour l'empreinte du mix électrique Français n'est pas encore disponible dans la Base Empreinte. Nous utilisons donc un chiffre issu d'Ecoinvent directement pour le moment, à savoir "market for electricity, low voltage".
+
+    L'utilisation de cette données est temporaire et sera remplacée par une donnée de la Base Empreinte prochainement. Elle est soumise à des [conditions d'utilisation spécifiques](https://nosgestesclimat.fr/mentions-legales-base-empreinte) et ne peut pas être réutilisée librement, l'ADEME ne disposant pas de la proppriété intellectuelle de cette donnée.
+
+mois par an:
+  titre: Nombre de mois par an
+  formule: 12
+  unité: mois
+
+semaines par an:
+  titre: Nombre de semaines par an
+  formule: 52
+  unité: semaine
+
+jours par semaine:
+  titre: Nombre de jours par semaine
+  formule: 7
+  unité: jour/semaine
+
+jours par an:
+  titre: Nombre de jours par an
+  formule: 365
+  unité: jour

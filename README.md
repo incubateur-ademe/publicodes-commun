@@ -1,101 +1,64 @@
-<div align="center">
-  <h3 align="center">
-	<big>Publicodes règles communes</big>
-  </h3>
-  <p align="center">
-   <a href="https://github.com/incubateur-ademe/publicodes-commun/issues">Report Bug</a>
-   •
-   <a href="https://incubateur-ademe.github.io/publicodes-commun/">API docs</a>
-   •
-   <a href="https://github.com/incubateur-ademe/publicodes-commun/blob/master/CONTRIBUTING.md">Contribute</a>
-  </p>
+# Règles communes Publicodes
 
-![CI][ci-link] ![NPM][npm-link]
+Ensemble de règles communes utilisées pour l'implémentation des modèles [Publicodes](https://publi.codes/).
 
-Ensemble de règles communes utilisées pour l'implémentation des modèles
-[publicodes](https://publi.codes) de l'[incubateur de
-l'ADEME](https://beta.gouv.fr/startups/?incubateur=ademe).
+## Installation
 
-Sa documentation est disponible [en
-ligne](https://incubateur-ademe.github.io/publicodes-commun/).
-
-</div>
-
-## Usage 
-
-Ajouter le paquet à vos dépendances : 
-```
-yarn add @incubateur-ademe/publicodes-commun
+```sh
+yarn install publicodes-commun publicodes
 ```
 
-Instancier un nouveau moteur Publicode :
-```typescript
-import Engine from 'publicodes'
-import rules from '@incubateur-ademe/publicodes-commun'
+## Development
 
-const engine = new Engine(rules)
+```sh
+// Install the dependencies
+yarn install
 
-engine.evaluate('intensité électricité')
-```
+// Compile the Publicodes rules
+yarn run compile
 
-Utiliser certaines règles dans un autre modèle publicodes :
-```yaml
-importer!:
-  depuis:
-    nom: @incubateur-ademe/publicodes-commun 
-    url: https://github.com/incubateur-ademe/publicodes-commun
-  dans: règles communes
-  les règles:
-    - intensité électricité
-```
+// Run the tests
+yarn run test
 
-### En local
-
-#### Compiler le modèle
-
-> Les règles publicodes du modèle sont disponible dans le workspace
-> [`rules/`](https://github.com/incubateur-ademe/publicodes-commun/tree/main/rules).
-
-Pour installer les dépendances et compiler tous les fichiers `.publicodes` en
-un seul fichier JSON, il suffit d'exécuter la commande suivante : 
-
-```
-yarn && yarn run build
-```
-
-#### Lancer la documentation
-
-> Le code de la documentation est disponible dans le workspace
-> [`doc/`](https://github.com/incubateur-ademe/publicodes-commun/tree/main/doc).
-
-Pour lancer l'app React en local permettant de parcourir la documentation du
-modèle, il suffit d'exécuter la commande suivante :
-
-```
-yarn i --cwd doc
-
+// Run the documentation server
 yarn run doc
 ```
 
-#### Lancer l'API
+## Usage
 
-> Le code de l'API est disponible dans le workspace
-> [`api/`](https://github.com/incubateur-ademe/publicodes-commun/tree/main/api).
+### Directement depuis ce jeux de règles
+```typescript
+import { Engine } from 'publicodes'
+import rules from 'publicodes-commun'
 
-Pour lancer le serveur Node permettant d'utiliser l'API REST, il faut utiliser les commandes
-suivantes : 
+const engine = new Engine(rules)
 
-```
-yarn run api
-
-# En watch-mode
-yarn run api:watch
+console.log(engine.evaluate('mix électrique . empreinte carbone').nodeValue)
+// 0.0519
 ```
 
-## Publier une nouvelle version
+### Dans un projet Publicodes
 
-Afin de publier une nouvelle version il suffit d'exécuter la commande `npm
-version`.
+```sh
+yarn add -D publicodes-commun
+```
 
-[ci-link]: https://img.shields.io/github/actions/workflow/status/incubateur-ademe/publicodes-commun/packaging.yaml?logo=github&logoColor=white&label=build%20%26%20test
-[npm-link]: https://img.shields.io/npm/v/%40incubateur-ademe%2Fpublicodes-commun?logo=npm&logoColor=white&color=salmon
+Dans un fichier `**.publicodes**` :
+
+```yaml
+importer!:
+  depuis:
+    nom: '@incubateur-ademe/publicodes-commun'
+    url: https://github.com/incubateur-ademe/publicodes-commun
+  dans: commun
+  les règles:
+    - mix électrique . empreinte carbone
+    - mois par an
+```
+
+Les règles ainsi importées seront accessibles et utilisables dans le modèle. Par exemple:
+
+```yaml
+empreinte électricité:
+    formule: commun . mix électrique . empreinte carbone * commun . mois par an * 100 kWh/mois
+```

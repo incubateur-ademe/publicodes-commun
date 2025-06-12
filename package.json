@@ -1,40 +1,31 @@
 {
   "name": "@incubateur-ademe/publicodes-commun",
-  "version": "1.1.5",
-  "description": "",
+  "description": "Ensemble de règles communes utilisées pour l'implémentation des modèles",
+  "version": "2.0.0",
+  "author": "Clément Auger",
+  "license": "MIT",
   "type": "module",
-  "main": "index.js",
-  "module": "index.js",
-  "types": "index.d.ts",
+  "main": "publicodes-build/index.js",
+  "types": "publicodes-build/index.d.ts",
   "files": [
-    "publicodes-commun.model.json",
+    "publicodes-build",
+    "index.d.ts",
     "index.js",
-    "index.d.ts"
+    "publicodes-commun.model.json"
   ],
   "scripts": {
-    "clean": "rm -r publicodes-commun.model.json index.d.ts index.js",
-    "build": "node build.js",
-    "doc": "yarn run build && cp publicodes-commun.model.json doc/src && cd doc && yarn run start --watch --hot",
-    "doc:build": "yarn run build && cp publicodes-commun.model.json doc/src && cd doc && yarn run build"
+    "compile": "publicodes compile",
+    "dev": "publicodes dev",
+    "pretest": "yarn run compile",
+    "test": "vitest run",
+    "prepack": "yarn compile && cp publicodes-build/* ./"
   },
-  "repository": "git@github.com:incubateur-ademe/publicodes-commun.git",
-  "homepage": "https://github.com/incubateur-ademe/publicodes-commun#readme",
-  "bugs": {
-    "url": "https://github.com/incubateur-ademe/publicodes-commun/issues"
-  },
-  "authors": [
-    "Clément Auger <clement.auger@beta.gouv.fr>",
-    "Emile Rolley <emile.rolley@tuta.io>"
-  ],
-  "license": "MIT",
-  "devDependencies": {
-    "@publicodes/tools": "^1.0.7"
-  },
-  "dependencies": {},
   "peerDependencies": {
-    "publicodes": "^1.1.1"
+    "publicodes": "^1.8.2"
   },
-  "publishConfig": {
-    "access": "public"
-  }
+  "devDependencies": {
+    "@publicodes/tools": "^1.7.2",
+    "vitest": "^2.1.2"
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }

@@ -1,6 +1,6 @@
+.DS_Store
 node_modules
-.yarn
-%PACKAGE_NAME%.model.json
+publicodes-build
 index.d.ts
 index.js
 publicodes-commun.model.json
