@@ -13,10 +13,10 @@ mix électrique . empreinte eau:
   titre: Empreinte eau du mix électrique français
   formule: 0.146
   unité: m3/kWh
+  description: |
+    > L'utilisation de cette données est temporaire et sera remplacée par une donnée de la Base Empreinte prochainement. Elle est soumise à des [conditions d'utilisation spécifiques](https://nosgestesclimat.fr/mentions-legales-base-empreinte) et ne peut pas être réutilisée librement, l'ADEME ne disposant pas de la propriété intellectuelle de cette donnée.
   note: |
     L'empreinte multi-critère pour l'empreinte du mix électrique Français n'est pas encore disponible dans la Base Empreinte. Nous utilisons donc un chiffre issu d'Ecoinvent directement pour le moment, à savoir "market for electricity, low voltage".
-
-    L'utilisation de cette données est temporaire et sera remplacée par une donnée de la Base Empreinte prochainement. Elle est soumise à des [conditions d'utilisation spécifiques](https://nosgestesclimat.fr/mentions-legales-base-empreinte) et ne peut pas être réutilisée librement, l'ADEME ne disposant pas de la proppriété intellectuelle de cette donnée.
 
 mois par an:
   titre: Nombre de mois par an
