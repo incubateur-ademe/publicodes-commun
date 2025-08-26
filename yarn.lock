@@ -274,20 +274,22 @@
   resolved "https://registry.yarnpkg.com/@pkgjs/parseargs/-/parseargs-0.11.0.tgz#a77ea742fab25775145434eb1d2328cf5013ac33"
   integrity sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==
 
-"@publicodes/react-ui@https://pkg.pr.new/publicodes/publicodes/@publicodes/react-ui@df800647d47aab7f8188122a81d630a79ae9abfa":
-  version "1.7.1"
-  resolved "https://pkg.pr.new/publicodes/publicodes/@publicodes/react-ui@df800647d47aab7f8188122a81d630a79ae9abfa#cbce0fa26092627f57b2662d35ddc394e345c42f"
+"@publicodes/react-ui@^1.8.0":
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/@publicodes/react-ui/-/react-ui-1.8.0.tgz#e96dc3964b3bb33acfb23274b0df8abf05f258cf"
+  integrity sha512-snrWfvvuWz2H111uVf78OjZeQqBJyA2l7brtW6fzaG2AYJ/s495xHAQb2Q5HgUZTrHZ+KXAjKCqFDkCP5qE+KA==
   dependencies:
     fuse.js "^7.0.0"
     styled-components "^6.1.1"
 
-"@publicodes/tools@https://pkg.pr.new/publicodes/publicodes/@publicodes/tools@df80064":
-  version "1.7.2"
-  resolved "https://pkg.pr.new/publicodes/publicodes/@publicodes/tools@df80064#499d22dddd0e8f6bc6917f92ceed52289748a950"
+"@publicodes/tools@^1.8.0":
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/@publicodes/tools/-/tools-1.8.0.tgz#ee48df9959dc8ca31e723dad972c43529736f897"
+  integrity sha512-QfgJ/qUXJ3oqbYhoyStllcH63GYBqj0nfYugzKkMurRlrfNNbE4YfEnahbbcUzCdoUWnHYr0me3wMNefMen5rw==
   dependencies:
     "@clack/prompts" "^0.7.0"
     "@oclif/core" "^4.2.5"
-    "@publicodes/react-ui" "https://pkg.pr.new/publicodes/publicodes/@publicodes/react-ui@df800647d47aab7f8188122a81d630a79ae9abfa"
+    "@publicodes/react-ui" "^1.8.0"
     "@tailwindcss/typography" "^0.5.16"
     "@tailwindcss/vite" "^4.0.0"
     "@types/node" "^18.11.18"
@@ -295,7 +297,7 @@
     chokidar "^4.0.3"
     glob "^10.4.1"
     path "^0.12.7"
-    publicodes "https://pkg.pr.new/publicodes/publicodes/publicodes@df800647d47aab7f8188122a81d630a79ae9abfa"
+    publicodes "^1.8.2"
     react "^18.0.0"
     react-dom "^18.0.0"
     react-router-dom "^7.1.3"
@@ -1219,9 +1221,10 @@ process@^0.11.1:
   resolved "https://registry.yarnpkg.com/process/-/process-0.11.10.tgz#7332300e840161bda3e69a1d1d91a7d4bc16f182"
   integrity sha512-cdGef/drWFoydD1JsMzuFf8100nZl+GT+yacc2bEced5f9Rjk4z+WtFUTBu9PhOi9j/jfmBPu0mMEY4wIdAF8A==
 
-"publicodes@https://pkg.pr.new/publicodes/publicodes/publicodes@df800647d47aab7f8188122a81d630a79ae9abfa":
+publicodes@^1.8.2:
   version "1.9.0"
-  resolved "https://pkg.pr.new/publicodes/publicodes/publicodes@df800647d47aab7f8188122a81d630a79ae9abfa#9cd31d383beeeebf415d779ff201dff8fadc86dd"
+  resolved "https://registry.yarnpkg.com/publicodes/-/publicodes-1.9.0.tgz#e74914edd46820ee5a81144192bb68a7e1a15fed"
+  integrity sha512-0E2vsKAZTq3jNm+sWYDDZfHjePPaPkBIn8cMLS7qtMxC8HRyPQMEFkqowibycLwY+C/hrG0OJJt6+estMiXxYA==
 
 react-dom@^18.0.0:
   version "18.3.1"
