@@ -2,12 +2,12 @@ mix électrique:
 mix électrique . empreinte carbone:
   titre: Empreinte carbone du mix électrique français
   description: |
-    Ce FE est basé sur le lissage des données des années 2024, 2023, 2022 et 2021. L’amont comprend : l’amont des combustibles, l’amortissement de la centrale et les émissions annexes de fonctionnement.
-  formule: 0.0519
+    Ce FE est basé sur le lissage des données des années 2025, 2024, 2023 et 2022. L’amont comprend : l’amont des combustibles, l’amortissement de la centrale et les émissions annexes de fonctionnement.
+  formule: 0.0461
   unité: kgCO2e/kWh
   note: |
     Ici, on parle du mix électrique de consommation. 
-    Le chiffre est issu de la Base Empreinte (Electricité/2024 - mix moyen/consommation) dont la méthodologie est décrite dans la [documentation](https://prod-basecarbonesolo.ademe-dri.fr/documentation/UPLOAD_DOC_FR/).
+    Le chiffre est issu de la Base Empreinte (Electricité/2025 - mix moyen/consommation) dont la méthodologie est décrite dans la [documentation](https://prod-basecarbonesolo.ademe-dri.fr/documentation/UPLOAD_DOC_FR/).
 
 mix électrique . empreinte eau:
   titre: Empreinte eau du mix électrique français
