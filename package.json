@@ -13,6 +13,9 @@
     "index.js",
     "publicodes-commun.model.json"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "compile": "publicodes compile",
     "dev": "publicodes dev",
