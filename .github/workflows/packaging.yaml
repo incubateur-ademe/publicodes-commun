@@ -67,9 +67,9 @@ jobs:
     #   - check_if_version_upgraded
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v6
       - name: Setup node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v6
         with:
           node-version: 22
       - name: Install dependencies and build
@@ -93,14 +93,15 @@ jobs:
       - create_github_release
       - check_if_version_upgraded
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           ref: ${{ github.ref }}
       - name: Setup .npmrc file to publish to npm
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: 22
           registry-url: "https://registry.npmjs.org"
+          package-manager-cache: false
       - name: Install dependencies
         run: yarn install --immutable
       - name: Prepare packaging
@@ -108,3 +109,4 @@ jobs:
       - name: Publish to NPM
         run: npm publish --access public --provenance
   
+
