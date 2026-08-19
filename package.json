@@ -4,6 +4,14 @@
   "version": "2.1.6",
   "author": "Clément Auger",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/incubateur-ademe/publicodes-commun.git"
+  },
+  "homepage": "https://github.com/incubateur-ademe/publicodes-commun#readme",
+  "bugs": {
+    "url": "https://github.com/incubateur-ademe/publicodes-commun/issues"
+  },
   "type": "module",
   "main": "publicodes-build/index.js",
   "types": "publicodes-build/index.d.ts",
